@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+
+	"name": "Drag CAPTCHA",
+	"description": "Drag CAPTCHA and auto fill in input box",
+	"version": "1.0",
+
+	"content_scripts": [ {
+		"js": [ "dragCAPTCHA.js", "gocr.js"],
+		"matches": [ "http://*/*", "file:///*", "https://*/*", "ftp://*/*" ],
+		"run_at": "document_end"
+	} ]
+}
